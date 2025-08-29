@@ -52,7 +52,7 @@ export default function Education() {
                   Future Consideration
                 </h5>
                 <p className="text-white/70">
-                  AI/ML Master's Program at WGU following Bachelor's completion
+                  {`AI/ML Master's Program at WGU following Bachelor's completion`}
                 </p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Education() {
                 
                 <div className="bg-white/5 rounded-lg p-4 border-l-4 border-yellow-400">
                   <p className="text-white/90 italic mb-2">
-                    "Technology is ever progressing, ever changing, and so a career in IT should also be a continuous journey of growth and development. Never stop learning."
+                    {`"Technology is ever progressing, ever changing, and so a career in IT should also be a continuous journey of growth and development. Never stop learning."`}
                   </p>
                   <p className="text-yellow-400 font-semibold text-center">
                     — Seek Always A New Horizon
