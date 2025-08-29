@@ -24,7 +24,6 @@ export default function Home() {
       <Projects />
       <Experience />
       <Education />
-      {/* Footer */}
       <Footer />
     </main>
     </>

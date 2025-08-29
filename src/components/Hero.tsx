@@ -38,7 +38,7 @@ export default function Hero() {
 
             {/* Subtitle/Description */}
             <p className="text-lg md:text-center text-white/80-semibold leading-relaxed max-w-6xl">
-              Using modern cloud technologies to automate deployment and build scalable, secure, and itelligent solutions.
+              Using modern cloud technologies to automate deployment and build scalable, secure, and intelligent solutions.
             </p>
 
             <p className="text-2xl md:text-2xl lg:text-3xl font-semibold text-yellow-400">

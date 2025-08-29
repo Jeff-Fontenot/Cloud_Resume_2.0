@@ -7,28 +7,28 @@ export default function Projects() {
     {
       title: "Cloud Resume Challenge 2.0",
       description:
-        "Modern serverless resume architecture built with Next.js, AWS Lambda, DynamoDB, and Infrastructure as Code. Features automated CI/CD pipeline, visitor analytics, and comprehensive monitoring.",
-      tech: ["Next.js", "AWS Lambda", "DynamoDB", "Terraform", "GitHub Actions"],
+        "Rebuilt the Cloud Resume Challenge with a modern Next.js + Tailwind stack, leveraging server-side rendering for performance and interactivity. Integrated dynamic features for resume updates and portfolio visibility, aligning with enterprise-grade web development practices.",
+      tech: ["Next.js", "Tailwind", "AWS Lambda", "DynamoDB", "Terraform", "GitHub Actions"],
       link: "https://github.com/Jeff-Fontenot",
     },
     {
       title: "Kubernetes Platform",
       description:
-        "Hybrid K3s cluster spanning AWS and homelab with GitOps deployment automation.",
+        "Deployed a production-style k3s cluster with AWS-hosted master and homelab worker nodes. Automated provisioning and security groups using Terraform. Integrated Prometheus & Grafana for real-time monitoring and alerting, demonstrating hybrid-cloud resiliency and observability.",
       tech: ["Kubernetes", "Terraform", "Ansible"],
       link: "https://github.com/Jeff-Fontenot",
     },
     {
-      title: "ESD Toolkit",
+      title: "Menu-Based PowerShell Automation",
       description:
-        "Quickly retrieve user, workstation, and printer information from Active Directory without navigating multiple administrative interfaces.",
+        "Developed a modular PowerShell tool adopted by coworkers to streamline user, printer, and workstation lookups in Active Directory. Saved 2-3 minutes per call, reducing daily ticket resolution time across the team reinforcing repeatable documentation practices.",
       tech: ["PowerShell", "Active Directory"],
       link: "https://github.com/Jeff-Fontenot/ESD_Summary_Tool.git",
     },
     {
       title: "Enterprise Grade Homelab",
       description:
-        "Proxmox-based hyperconverged infrastructure with Ceph storage, running a variety of VMs and containers for learning and experimentation.",
+        "Designed and deployed contanerized services with Docker/Portainer, fronted by Traefik reverse proxy with automated TLS. Implemented Prometheus/Grafana monitoring and recursive DNS filtering with PiHole and Unbound, creating a secure production-style sandbox for testing cloud-native architectures.",
       tech: ["Proxmox", "Ubuntu Server", "Docker", "Traefik", "Zero Trust", "Prometheus", "Grafana"],
       link: "https://github.com/Jeff-Fontenot",
     },

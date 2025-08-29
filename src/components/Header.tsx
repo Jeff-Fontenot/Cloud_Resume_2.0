@@ -31,27 +31,30 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link 
-              href="/about" className="nav-link" 
-              className="text-white/70 hover:text-white transition-colors"
+              href="/about"
+              className="nav-link text-white/70 hover:text-white transition-colors"
             >
               About
             </Link>
             <Link 
-              href="/projects" className="nav-link" 
-              className="text-white/70 hover:text-white transition-colors"
+              href="/projects"
+              className="nav-link text-white/70 hover:text-white transition-colors"
             >
               Projects
             </Link>
             <Link 
-              href="/blog" className="nav-link" 
-              className="text-white/70 hover:text-white transition-colors"
+              href="/blog"
+              className="nav-link text-white/70 hover:text-white transition-colors"
             >
               Blog
             </Link>
           </nav>
           
           {/* Desktop CTA Button */}
-          <button
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               hidden md:inline-flex
               relative h-fit w-fit rounded-full
@@ -66,7 +69,7 @@ export default function Header() {
               hover:shadow-[0_0_15px_rgba(250,204,21,0.8)]"
           >
             Download My Resume
-          </button>
+          </a>
 
           {/* Mobile Hamburger Button */}
           <button
