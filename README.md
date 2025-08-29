@@ -1,37 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jeff Fontenot – Cloud Resume
+
+A modern Cloud & DevOps Resume built with Next.js, Tailwind CSS, and TypeScript.  
+This site is part of my IT Odyssey journey, showcasing certifications, projects, and skills in a modern, interactive way.
+
+Live Site: [https://jeff.itodyssey.io](https://jeff.itodyssey.io)
+
+---
+
+## Features
+- Built with Next.js (App Router), Tailwind CSS, and TypeScript
+- Responsive layout with a coverflow gallery for certifications
+- Downloadable, ATS-friendly PDF resume
+- Projects showcase (Terraform, Kubernetes, PowerShell, Docker, etc.)
+- Blog section (coming soon)
+- Root landing page with curiosity message, quote rotator, and visitor counter
+
+---
+
+## Tech Stack
+- Framework: Next.js
+- Language: TypeScript
+- Styling: Tailwind CSS + shadcn/ui
+- Deployment: Vercel
+- Utilities:
+  - @tailwindcss/typography for blog styling
+  - Next Metadata API for SEO + Open Graph cards
+  - Planned: Vercel KV for visitor counters
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- pnpm (recommended) or npm/yarn
 
+### Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repo
+git clone https://github.com/yourusername/cloud-resume.git
+cd cloud-resume
+
+# Install dependencies
+pnpm install
+
+# Run development server
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-// Cache bust
+app/
+ ├─ about/          # About page (mission, vision, backstory)
+ ├─ projects/       # Projects showcase
+ ├─ blog/           # Blog posts (MDX planned)
+ ├─ api/            # API routes (visits, what’s new, quotes)
+ └─ page.tsx        # Root landing page
+components/         # Reusable UI components
+lib/                # Content data models
+public/             # Static assets (logos, og.png, favicon)
