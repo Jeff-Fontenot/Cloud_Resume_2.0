@@ -16,34 +16,27 @@ export default function Footer() {
           </Link>
           
           {/* Social Links */}
-          <div className="flex items-center gap-6">
-            <Link 
-              href="https://github.com/Jeff-Fontenot" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-white transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="h-6 w-6" />
-            </Link>
-            <Link 
-              href="https://www.linkedin.com/in/jeff-fontenot/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-white transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-6 w-6" />
-            </Link>
-            {/*<Link 
-              href="https://youtube.com/@jeff-fontenot?si=vLNIKvkytJUVqzil" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/70 hover:text-white transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube className="h-6 w-6" />
-            </Link> */}
+          <div className="flex-1 flex justify-center">
+            <div className="flex items-center gap-6">
+              <Link 
+                href="https://github.com/Jeff-Fontenot" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors"
+                aria-label="GitHub"
+              >
+                <Github className="h-6 w-6" />
+              </Link>
+              <Link 
+                href="https://www.linkedin.com/in/jeff-fontenot/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-6 w-6" />
+              </Link>
+            </div>
           </div>
           
           {/* CTA Button */}
@@ -63,7 +56,11 @@ export default function Footer() {
               >
             Download My Resume
           </button>
+
         </div>
+      </div>
+      <div className="flex items-center justify-center mt-6 text-sm text-white/50">
+        <p>© 2025 Jeff Fontenot. All rights reserved.</p>
       </div>
     </footer>
   );
