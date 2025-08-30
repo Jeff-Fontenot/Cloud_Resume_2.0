@@ -91,28 +91,28 @@ export default function Header() {
         <div className="md:hidden bg-slate-950/95 backdrop-blur-md border-t border-white/10">
           <div className="max-w-5xl mx-auto px-4 py-4 space-y-4">
             <Link 
-              href="#about" 
-              onClick={closeMenu}
+              href="/about" 
               className="block text-white/70 hover:text-white transition-colors py-2"
             >
               About
             </Link>
             <Link 
-              href="#projects" 
-              onClick={closeMenu}
+              href="/projects" 
               className="block text-white/70 hover:text-white transition-colors py-2"
             >
               Projects
             </Link>
             <Link 
-              href="#contact" 
-              onClick={closeMenu}
+              href="/blog" 
               className="block text-white/70 hover:text-white transition-colors py-2"
             >
               Blog
             </Link>
-            <button 
-              onClick={closeMenu}
+            {/* Mobile CTA Button */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 inline-flex
                 relative h-fit w-fit rounded-full
@@ -127,7 +127,7 @@ export default function Header() {
                 hover:shadow-[0_0_15px_rgba(250,204,21,0.8)]"
                 >
               Download My Resume
-            </button>
+            </a>
           </div>
         </div>
       )}

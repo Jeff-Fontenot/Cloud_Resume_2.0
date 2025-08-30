@@ -40,9 +40,12 @@ export default function Footer() {
           </div>
           
           {/* CTA Button */}
-          <button               
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              inline-flex
+              md:inline-flex
               relative h-fit w-fit rounded-full
               border border-yellow-200/40
               bg-blue-200/10 px-4 py-2
@@ -53,9 +56,9 @@ export default function Footer() {
               focus:ring-2 focus:ring-yellow-300/30
               hover:animate-pulse
               hover:shadow-[0_0_15px_rgba(250,204,21,0.8)]"
-              >
+          >
             Download My Resume
-          </button>
+          </a>
 
         </div>
       </div>
