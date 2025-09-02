@@ -46,7 +46,7 @@ export default async function BlogIndexPage() {
                   key={p.id}
                   href={`/blog/${p.slug}`}
                   className="group relative overflow-hidden rounded-2xl glass-container glass-container-before
-                             transition-transform duration-300 hover:scale-[1.06]"
+           transition-transform duration-300 hover:scale-[1.06] min-h-[400px] flex flex-col"
                 >
                   {/* ring / glow on hover */}
                   <span
@@ -68,7 +68,7 @@ export default async function BlogIndexPage() {
                   )}
 
                   <div className="p-3 relative">
-                    {p.tags?.length > 0 && (
+                   {/* {p.tags?.length > 0 && (
                       <div className="flex flex-wrap gap-2 text-[11px] uppercase tracking-wide">
                         {p.tags.map((t: string) => (
                           <span
@@ -79,14 +79,14 @@ export default async function BlogIndexPage() {
                           </span>
                         ))}
                       </div>
-                    )}
+                    )} */}
 
-                    <h2 className="mt-1 text-lg font-semibold text-yellow-400 group-hover:underline">
+                    <h2 className="mt-5 text-lg font-semibold text-yellow-400 group-hover:underline">
                       {p.title}
                     </h2>
 
                     {p.preview && (
-                      <p className="mt-2 line-clamp-4 text-sm text-slate-300">
+                      <p className="mt-2.5 line-clamp-4 text-sm text-slate-300">
                         {p.preview}
                       </p>
                     )}
