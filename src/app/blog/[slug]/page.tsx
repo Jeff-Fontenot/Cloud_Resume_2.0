@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
     <main className="bg-slate-950">
       {/* Centered mini-hero */}
       <section className="relative min-h-[30vh] md:min-h-[36vh] overflow-hidden pt-28">
-        <div className="mx-auto max-w-4xl px-4 text-center">
+        <div className="mx-auto max-w-6xl px-4 text-center">
           <Link
             href="/blog"
             className="my-5 inline-flex gap-2 text-sm text-yellow-400 hover:underline"
@@ -99,6 +99,9 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           <h1 className="my-5 text-4xl md:text-5xl font-extrabold leading-tight gradient-text">
             {post.title}
           </h1>
+          <h3 className="mb-10 mx-auto text-2xl max-w-2xl text-slate-400">
+            {post.description}
+          </h3>
         </div>
       </section>
 
